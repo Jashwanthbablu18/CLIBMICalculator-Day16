@@ -1,0 +1,32 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+1. show_intro():
+   - This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+2. bmi_wrapper():
+   - The bmi_wrapper function takes three parameters: name, height_m (height in meters), and weight_kg (weight in kilograms).
+   - It begins by displaying a message indicating that it is calculating BMI for the given individual.
+   - BMI Calculation: The BMI is calculated using the formula: 
+     BMI = weight / (height)^2
+   After that it displays the bmi with two decimal points precision.
+   - check_bmi_category():
+     - This nested function takes a bmi_value as input and determines the BMI category based on standard ranges:
+       - "Underweight" if BMI is less than 18.5
+       - "Normal" if BMI is between 18.5 and 24.9
+       - "Overweight" if BMI is between 25 and 29.9
+       - "Obese" if BMI is 30 or higher
+     - The appropriate category is returned based on the bmi_value.
+   - The bmi_wrapper function calls check_bmi_category() with the calculated BMI and prints the resulting category.
+   - Finally, it returns a tuple containing the BMI and its category.
+
+3. main():
+   - This is the starting point of profram execution
+   - It calls show_intro() to display the introduction message.
+   - It then tests the bmi_wrapper function with four different test cases with different names, height, weight.
+
+4. Starting point:
+   - The script includes an if __name__ == "__main__": block to ensure that the main function is only executed when the script is run directly, not when it is imported as a module in another script.
+
+What I've learnt:
+- Nested functions: Nested functions in python are a type of functions defined inside another functions. They are often used to encapsulate code, 
+  maintain clean code. 
